@@ -1,0 +1,404 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+  
+}
+
+
+#sidebar-toggle{
+    display: none;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #42408D;
+    color: #fff;
+    overflow-y: auto;
+    transition: 500ms;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+   
+}
+
+
+.sidebar-menu{
+    padding: 1rem;
+}
+
+.sidebar li{
+    margin-bottom: 1rem;
+}
+
+.sidebar a{
+    font-size: .9rem;
+    color: #fff;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.sidebar a span:last-child{
+    padding-left: .6rem;
+}
+
+#sidebar-toggle:checked ~ .sidebar{
+    width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child{
+    display: none;
+    
+
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li{
+    display: flex;
+    justify-content: center;
+
+}
+
+.sidebar a.active{
+background-color: var(--clr-light);
+color: var(--clr-primary);
+}
+
+
+.sidebar a:hover{
+    color: darkblue;
+}
+
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 60px;
+}
+
+#sidebar-toggle:checked ~ .main-content header{
+    left: 60px;
+}
+
+
+.main-content{
+  position: relative;
+  margin-left: 240px;
+  transition: margin-left 500ms;
+}
+
+header{
+    position: fixed;
+    left: 240px;
+    top: 0;
+    z-index: 100 ;
+    width: calc(100% - 240px);
+    background: #fff ;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+}
+
+.search-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input{
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    height: 38px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons span,
+.social-icons div{
+    margin-left: 1.2rem;
+}
+
+.social-icons div {
+    height: 38px;
+    width: 38px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img.jpg);
+    border-radius: 50%;
+}
+
+
+
+
+main{
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title{
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    margin-top: 50px;
+}
+
+.dash-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+}
+.card-single{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-body{
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.card-body span{
+    font-size: 1rem;
+    color: #777;
+    padding-right: 1.4rem;
+}
+
+.card-body h3{
+    color: var(--clr-dark-variant);
+    font-size: 1rem;
+}
+.card-body h1{
+    color: var(--clr-danger);
+    font-size: 1.1rem;
+    margin-top: .2rem;
+}
+
+
+.recent{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.activity-grid{
+    display: grid;
+    grid-template-columns: 75% 20%;
+    column-gap: 1rem;
+}
+
+.property-card,
+.summery-card{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.property-card h3{
+    color: var(--text-grey);
+    margin: 1rem;
+}
+
+.property-card table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.property-card thead{
+    background-color: #efefef;
+    text-align: left;
+}
+
+th, td{
+    font-size: .9rem;
+    padding: 1rem .5rem;
+    color: var(--clr-dark);
+}
+
+td{
+    font-size: .8rem;
+}
+tbody tr:nth-child(even){
+    background: #f9fafc;
+}
+
+.summery-card{
+    margin-bottom: 1.5rem;
+
+}
+
+
+button{
+  border: 1px solid var(--color-dark);
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 2px 8px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+ 
+  
+}
+.deletebtn{
+    background-color: pink;
+    color: red;
+}
+.updatebtn{
+    background-color: #FFECA1;
+    color: #FE9900;
+
+}
+
+
+.summery-single{
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.summery-single span{
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1rem;
+}
+
+.summery-single h5{
+    color: #42408D;
+    font-size: 1.1rem;
+    margin-bottom: 0rem !important;
+}
+
+.summery-single small{
+    font-weight: 700;
+    color: var(--text-grey);
+}
+
+
+.text-center{
+    text-align: center;
+}
+.text-center button{
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: .4rem 1rem;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 1200px){
+    .sidebar{
+        width: 60px;
+        z-index: 150;
+    }
+    
+    .sidebar .sidebar-header h3 span,
+    .sidebar li span:last-child{
+        display: none;
+    
+    }
+    .sidebar .sidebar-header,
+    .sidebar li{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .main-content{
+        margin-left: 60px;
+    }
+    
+    .main-content header{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    #sidebar-toggle:checked ~ .sidebar{
+        width: 240px;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+    #sidebar-toggle:checked ~ .sidebar li span:last-child{
+        display: inline;
+        
+    
+    }
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+
+    #sidebar-toggle:checked ~ .sidebar li{
+        display: block;
+    
+    }
+ 
+    #sidebar-toggle:checked ~ .main-content{
+        margin-left: 60px;
+    }
+    
+    #sidebar-toggle:checked ~ .main-content header{
+        left: 60px;
+        
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .dash-cards{
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+
+    .card-single{
+        margin-bottom: 1rem;
+    }
+    .activity-grid{
+        display: block;
+    }
+    .summery{
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .dash-cards{
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
+
+

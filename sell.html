@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Sell</title>
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="navbar">
+        <img class="logo" src="img/logo-.png" alt="Gacaferi-RealEstate">
+        
+            <ul class="nav-links">
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="contact.php">Contact&Feedback</a></li>
+            </ul>
+            <a class="login" href="index.php"><button>Login</button></a>    
+    </nav>
+
+    <div class="main-content">
+        <h2>Dëshironi të Shisni Pronë?</h2>
+        <p>Ju lutem plotësoni fushat përkatëse!</p>
+        <form action="" method="post">
+            <label for="name">Emri dhe Mbiemri:</label>
+            <input type="text" id="size" name="size" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="property-type">Tipi i Pronës:</label>
+            <select name="property-type" id="property-type" required>
+                <option value="">Zgjedh Tipin</option>
+                <option value="apartment">Apartament</option>
+                <option value="house">Shtëpi</option>
+                <option value="villa">Ville</option>
+                <option value="land"> Truall</option>
+                <option value="commercial">Lokal</option>
+            </select>
+
+            
+            <label for="size">Sipërfaqja:</label>
+            <input type="text" id="size" name="size" required>
+
+            <label for="price">Çmimi:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="location">Lokacioni:</label>
+            <input type="text" id="location" name="location" required>
+           
+            <label for="description">Përshkrimi:</label>
+            <textarea id="description" name="description" rows="15" required></textarea>
+
+            <label for="image">Shto Imazhe:</label>
+            <input type="file" id="image" name="image[]" accept="image/*" multiple>
+
+
+
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+
+
+</div>
+
+     
+</body>
+</html>

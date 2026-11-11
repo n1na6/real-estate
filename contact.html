@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Contact&Feedback</title>
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img class="logo" src="img/logo-.png" alt="Gacaferi-RealEstate">
+        
+            <ul class="nav-links">
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="contact.html">Contact&Feedback</a></li>
+            </ul>
+            <a class="login" href="index.php"><button>Login</button></a>    
+    </nav>
+
+    <div class="main-content">
+        <h2>Dërgo një mesazh!</h2>
+        <p>Ju lutem plotësoni fushat përkatëse!</p>
+        <form action="contact.php" method="post">
+            <label for="name">Emri:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="lastname">Mbiemri:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="description">Përshkrimi:</label>
+            <textarea id="description" name="description" rows="15" required></textarea>
+
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+
+</div>
+
+</body>
+</html>
+
+
+

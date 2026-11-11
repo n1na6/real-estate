@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="property-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img class="logo" src="img/logo-.png" alt="Gacaferi-RealEstate">
+        
+            <ul class="nav-links">
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="contact.php">Contact&Feedback</a></li>
+            </ul>
+          <!--  <a class="login" href="index.html"><button>Login</button></a>    -->
+    </nav>
+ <div class="main-content">
+   <section class="view-property">
+    <div class="details">
+        <div class="thumb">
+            <div class="big-img">
+                <img src="img/ul-truall1.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="img/ul-truall2.jpg" alt="">
+                <img src="img/ul-truall3.jpg" alt="">
+            </div>
+        </div>
+        <div class="name">Truall</div>
+        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Ulqin</span></p>
+        <div class="info">
+            <p><i class="fas fa-tag"></i><span>Në Shitje</span></p>
+            <p><i class="fas fa-user"></i><span>Gacaferi RealEstate</span></p>
+            <p><i class="fas fa-phone"></i>043 886 665</p>
+            <p><i class="fas fa-building"></i><span>Truall</span></p>
+            <p><i class="fas fa-calendar"></i><span>10-11-2024</span></p>
+        </div>
+        <h3 class="title">Pershkrimi:</h3>
+        <div class="flex">
+            <div class="box">
+                <p class="description">Ofrohet për shitje trualli me sipërfaqe prej 5 Ari (507m²) me lokacion në rr. ‘Rruga e Kosovës’ zona e Pinjeshit, Ulqin. Trualli ndodhet në një lokacion të përshtatshëm per ndërtim ku edhe është i pajisur me leje ndërtimi për 1150m² P+4. Zona e Pinjeshit është një ndër zonat më të kërkuara në Ulqin për shkak të pozitës gjeografike e cila i siguron qetësi dhe pamje të hapur, po ashtu edhe afërsi me pishat dhe detin. Dokumentacion i plotë dhe përkthim i menjehershëm tek Noteri.
+
+                    Gacaferi Real Estate është zgjedhja juaj kudo!
+                    
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+   </section>
+</div>
+
+   <footer class="footer">
+    <div class="footer-content">
+            <h3>Gacaferi RealEstate</h3>
+            <p>Partneri juaj i besueshëm për të gjitha nevojat në fushën e patundshmërisë në Prishtinë dhe rrethinë!</p>
+        
+    
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/watch/100094608992045/" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/gacaferi.realestate/p/C-XsaEDCB83/?img_index=1" class="fa fa-instagram"></a></li>
+            <li><a href="" class="fa fa-phone"></a></li>
+            <li><a href="" class="fa fa-envelope"></a></li>
+        </ul>
+    </div>
+    
+    </footer>
+
+    <script>
+        document.querySelectorAll('.view-property .details .thumb .small-img img').forEach(imgs =>{
+            imgs.onclick = () =>{
+                src = imgs.getAttribute('src');
+                document.querySelector('.view-property .details .thumb .big-img img').src = src;
+            }
+
+        });
+    </script>
+
+
+</body>
+</html>   

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Update Property</title>
+    <link rel="stylesheet" href="add-property.css">
+</head>
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="fas fa-user"></span>
+                <span>Admin </span>
+            </h3>
+            <label for="sidebar-toggle" class="fas fa-navicon"></label>
+            
+        </div>
+    
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    
+                    <a href="admin-panel.php"><span class="fas fa-home"></span><span>Main</span></a>
+                </li>
+                <li>
+                    <a href="property-m.php"><span class="fas fa-folder"></span><span>Menaxhimi i Pronave</span></a>
+                </li>
+                <li>
+                    <a href="feedback.php"><span class="fas fa-clipboard"></span><span>Mesazhet</span></a>
+                </li>
+                <li>
+                    <a href="sellingOffers.html"><span class="fas fa-book"></span><span>Ofertat për Shitje</span></a>                </li>
+                <li>
+                    <a href="index.php"><span class="fas fa-sign-out"></span><span>Logout</span></a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="main-content">
+        <h2>Përditëso Pronën</h2>
+        <form action="" method="post" enctype="">
+            <label for="property-type">Tipi i Pronës:</label>
+            <select name="property-type" id="property-type" required>
+                <option value="">Zgjedh Tipin</option>
+                <option value="apartment">Apartament</option>
+                <option value="house">Shtëpi</option>
+                <option value="villa">Ville</option>
+                <option value="land">Tokë</option>
+                <option value="commercial">Pronë Komerciale</option>
+            </select>
+
+            
+            <label for="size">Sipërfaqja:</label>
+            <input type="text" id="size" name="size" required>
+
+            <label for="price">Çmimi:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="location">Lokacioni:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="property-status">Statusi i Pronës:</label>
+            <select name="property-status" id="property-status" required>
+                <option value="">Zgjedh Statusin</option>
+                <option value="for-sale">Në shitje</option>
+                <option value="for-rent">Për Qira-marrje</option>
+                <option value="sold">E shitur</option>
+                <option value="">Nuk është në Dispozicion</option>
+            </select>
+
+            <label for="description">Përshkrimi:</label>
+            <textarea id="description" name="description" rows="15" required></textarea>
+
+            <label for="image">Përditëso Imazhe tjera:</label>
+            <input type="file" id="image" name="image[]" accept="image/*" multiple>
+
+
+            <button type="submit">Përditëso</button>
+        </form>
+    </div>
+    
+</body>
+</html>

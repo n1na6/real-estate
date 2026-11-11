@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+ }
+
+ body{
+    background-color: #24252a ;
+    background: linear-gradient(to right, lightgrey , #24252a);
+ 
+ }
+ .container{
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+ }
+
+
+ .form{
+   margin: 0 2rem;
+}
+
+
+.form-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+ }
+ input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+ }
+ .input-group{
+    padding: 1% 0;
+    position: relative;
+
+ }
+
+ input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hs1(327, 90%, 28%);
+ }
+ input::placeholder{
+    color: transparent;
+ }
+
+button{
+   font-size: 1.1rem;
+   padding: 8px 0;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   width: 100%;
+   background: #24252a;
+   color: white;
+   cursor: pointer;
+   transition: 0.9s;
+}
+button :hover{
+   background: #07001f;
+}
+
+#error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/*
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+}
+button{
+    color: rgb(125, 125, 235);
+    border:none;
+    background-color: transparent;
+
+}
+button:hover{
+    text-decoration: underline;
+    color: blue;
+}
+*/
